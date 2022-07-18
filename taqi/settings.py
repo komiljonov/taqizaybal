@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%&8obv!hiaop9d*0g25eq6+c&wxr&^u$*#s^!&q+&k3caxwc#^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["143.110.239.138", "localhost", "127.0.0.1", "localhost:3000", "127.0.0.1:3000", "http://127.0.0.1:3000", "http://127.0.0.1", "taqitaqi.netlify.app"]
 
 
 # Application definition
@@ -126,3 +126,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+STATIC_ROOT = BASE_DIR / 'static'
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static",
+#]
