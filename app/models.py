@@ -12,5 +12,15 @@ class New(models.Model):
             'id': self.id,
             'title': self.title,
             'description': self.description,
-            'image': self.image.url
+            'image': [
+                image.img.url for image in self.images()
+            ],
         }
+    
+    def images(self) -> "list[Img]":
+        return Img.objects.filter(news=self)
+
+
+class Img(models.Model):
+    news = models.ForeignKey(New, on_delete=models.CASCADE)
+    img = models.ImageField(upload_to='images/')
