@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%&8obv!hiaop9d*0g25eq6+c&wxr&^u$*#s^!&q+&k3caxwc#^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["143.110.239.138", "localhost", "127.0.0.1", "localhost:3000", "127.0.0.1:3000", "http://127.0.0.1:3000", "http://127.0.0.1", "taqitaqi.netlify.app"]
+ALLOWED_HOSTS = ["143.110.239.138", "localhost", "127.0.0.1", "localhost:3000", "127.0.0.1:3000", "http://127.0.0.1:3000", "http://127.0.0.1", "taqitaqi.netlify.app", "127.0.0.1:3000"]
 
 
 # Application definition
